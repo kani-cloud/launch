@@ -1,0 +1,11 @@
+<div id="h5p-container"></div>
+<script type="text/javascript" kani-h5p-player="assets/h5p-player/main.bundle.js" charset="UTF-8"></script>
+document.addEventListener('DOMContentLoaded', function () {
+  const el = document.getElementById('h5p-container');
+  const options = {
+    h5pJsonPath: '/path/to/your/h5p-folder', // Path to the extracted H5P content
+    frameJs: 'assets/h5p-player/frame.bundle.js', // Path to player's frame.bundle.js
+    frameCss: 'assets/h5p-player/styles/h5p.css', // Path to player's h5p.css
+  };
+  new H5PStandalone.H5P(el, options);
+});
